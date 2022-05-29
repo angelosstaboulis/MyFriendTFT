@@ -8,14 +8,14 @@
 import Foundation
 import SwiftUI
 import WebKit
-struct SwiftUIWebView:UIViewRepresentable{
+final class SwiftUIWebView:UIViewRepresentable{
     var filePath:URL
-    typealias UIViewType = UIWebView
-    func makeUIView(context: Context) -> UIWebView {
-        return UIWebView()
+    typealias UIViewType = WKWebView
+    func makeUIView(context: Context) -> WKWebView {
+        return WKWebView()
     }
     public func updateUIView(_ uiView: UIViewType, context: Context) {
-        uiView.loadRequest(URLRequest(url: filePath))
+        uiView.load(URLRequest(url: filePath))
     }
     init(filePath:URL){
         self.filePath = filePath

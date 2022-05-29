@@ -17,6 +17,7 @@ struct ContentView: View {
             StoryView().tabItem {
                 Text("Story")
                 Image(systemName: "square.and.pencil")
+                
             }
             Wikipedia().tabItem {
                 Text("Wikipedia")
