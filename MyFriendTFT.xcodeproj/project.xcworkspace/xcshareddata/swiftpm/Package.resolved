@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ToastSwiftUI",
+        "repositoryURL": "https://github.com/huynguyencong/ToastSwiftUI.git",
+        "state": {
+          "branch": null,
+          "revision": "fc621e168dd8b308a1a4a6ea3bf6a85716d3d361",
+          "version": "0.3.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
