@@ -23,6 +23,7 @@
 		D68EEE4A2842C54600A8D1DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68EEE492842C54600A8D1DF /* LaunchScreen.storyboard */; };
 		D68EEE4D2842C9F000A8D1DF /* ToastSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D68EEE4C2842C9F000A8D1DF /* ToastSwiftUI */; };
 		D68EEE502842D28E00A8D1DF /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EEE4F2842D28E00A8D1DF /* SwiftUIWebView.swift */; };
+		D6F9B0332C27763D002F4487 /* WebViewMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F9B0322C27763D002F4487 /* WebViewMedia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		D68EEE462842C23A00A8D1DF /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		D68EEE492842C54600A8D1DF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D68EEE4F2842D28E00A8D1DF /* SwiftUIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWebView.swift; sourceTree = "<group>"; };
+		D6F9B0322C27763D002F4487 /* WebViewMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewMedia.swift; sourceTree = "<group>"; };
+		D6F9B0342C277E7E002F4487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		D68EEE032842B15000A8D1DF /* MyFriendTFT */ = {
 			isa = PBXGroup;
 			children = (
+				D6F9B0342C277E7E002F4487 /* Info.plist */,
 				D68EEE4E2842D27600A8D1DF /* SwiftUIWebView */,
 				D68EEE452842C21900A8D1DF /* Video */,
 				D68EEE422842C0DC00A8D1DF /* Wikipedia */,
@@ -189,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				D68EEE4F2842D28E00A8D1DF /* SwiftUIWebView.swift */,
+				D6F9B0322C27763D002F4487 /* WebViewMedia.swift */,
 			);
 			path = SwiftUIWebView;
 			sourceTree = "<group>";
@@ -338,6 +343,7 @@
 				D68EEE352842B69400A8D1DF /* HomeView.swift in Sources */,
 				D68EEE072842B15000A8D1DF /* ContentView.swift in Sources */,
 				D68EEE052842B15000A8D1DF /* MyFriendTFTApp.swift in Sources */,
+				D6F9B0332C27763D002F4487 /* WebViewMedia.swift in Sources */,
 				D68EEE472842C23A00A8D1DF /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,12 +508,14 @@
 				DEVELOPMENT_TEAM = K6LJCT8RAA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyFriendTFT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -532,12 +540,14 @@
 				DEVELOPMENT_TEAM = K6LJCT8RAA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyFriendTFT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
