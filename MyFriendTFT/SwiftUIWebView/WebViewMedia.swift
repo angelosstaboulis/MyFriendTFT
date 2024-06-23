@@ -11,7 +11,7 @@ import SwiftUI
 struct WebViewMedia:UIViewRepresentable{
     var urlFile = String()
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        uiView.scrollView.isScrollEnabled = false
+        uiView.scrollView.isScrollEnabled = true
     }
  
     func makeUIView(context: Context) ->  WKWebView {

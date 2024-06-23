@@ -6,25 +6,22 @@
 //
 
 import SwiftUI
-
+import AVKit
 struct Video: View {
-    @State private var amount = 0.0
-    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
-    @State private var presenting:Bool=true
-
     var body: some View {
-        ZStack(alignment: .center) {
-            ProgressView("Loading…", value: amount, total: 50)
-                .onReceive(timer) { _ in
-                    if amount < 50 {
-                        amount += 2
-                    }
-            }.opacity(amount < 50 ? 1 : 0.0)
-            .progressViewStyle(.circular)
-            WebViewMedia(urlFile:"https://www.youtube.com/watch?v=NIFOlQU56FY")
-          
-        }
-        
+        VideoPlayer(player: AVPlayer(url:  URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!)) {
+            VStack(alignment: .leading) { // 2
+                          Text("Video Player")
+                              .foregroundColor(Color.gray)
+                              .bold()
+                              .font(Font.title2)
+                              .padding(.all, 10)
+                          Spacer()
+            }
+        }.background(content: {
+            Color.black
+        }).frame(width:UIScreen.main.bounds.width,height: UIScreen.main.bounds.height - 300)
+       
     }
 }
 

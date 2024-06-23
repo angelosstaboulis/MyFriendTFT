@@ -1,8 +1,8 @@
 //
-//  SwiftUIWebView.swift
+//  PDFViewer.swift
 //  MyFriendTFT
 //
-//  Created by Angelos Staboulis on 29/5/22.
+//  Created by Angelos Staboulis on 23/6/24.
 //
 
 import Foundation
